@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Resume Naresh Namani</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
@@ -18,6 +18,7 @@
     <link href="css/preloader.min.css" rel="stylesheet" />
 
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/circle.css" rel="stylesheet" />
 
     <link href="css/styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,7 +28,7 @@
   <body>
     <section>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#" style="flex: 1"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,7 +48,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Profile </a>
+              <a class="nav-link" href="#about"> Profile </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"> projects </a>
@@ -81,8 +82,8 @@
                   Graphics Designer
                 </p>
                 <p>
-                  <a class="btn btn-primary btn-lg" href="#" role="button">
-                    About Me &raquo;
+                  <a class="btn btn-primary btn-lg btn-about" href="#about">
+                    About Me
                   </a>
                 </p>
               </div>
@@ -93,47 +94,144 @@
         </div>
       </div>
     </section>
+    <hr />
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
-        <div class="row about-details">
-          <img
-            src="images/img-mobile.jpg"
-            class="img-fluid mobileprofileImage d-lg-none d-block"
-            alt="my picture"
-          />
-          <div class="col-12">
-            <h3>Personal Information</h3>
+        <div class="row">
+          <div class="col-12 text-lg-center">
+            <h3>ABOUT ME</h3>
           </div>
-          <div class="col-6">
-            <ul class="list-unstyled open-sans-font">
-              <li>
-                <span class="title">Fist name : </span>
-                <span class="value">Naresh</span>
-              </li>
-              <li>
-                <span class="title">Last name : </span>
-                <span class="value">Namani</span>
-              </li>
-              <li>
-                <span class="title">Nationality : </span>
-                <span class="value">Indian</span>
-              </li>
-              <li>
-                <span class="title">Phone : </span>
-                <span class="value">+91 8686506505</span>
-              </li>
-              <li>
-                <span class="title">Email : </span>
-                <span class="value">nareshnamani1996@gmail.com</span>
-              </li>
-            </ul>
+        </div>
+        <div class="row about-details">
+          <div class="col-lg-6">
+            <div class="row">
+              <img
+                src="images/img-mobile.jpg"
+                class="img-fluid mobileprofileImage d-lg-none d-block"
+                alt="my picture"
+              />
+              <div class="col-12">
+                <h3>Personal Information</h3>
+              </div>
+              <div class="col-12">
+                <ul class="list-unstyled open-sans-font Personal">
+                  <li>
+                    <span class="title">Fist name : </span>
+                    <span class="value">Naresh</span>
+                  </li>
+                  <li>
+                    <span class="title">Last name : </span>
+                    <span class="value">Namani</span>
+                  </li>
+                  <li>
+                    <span class="title">Nationality : </span>
+                    <span class="value">Indian</span>
+                  </li>
+                  <li>
+                    <span class="title">Phone : </span>
+                    <span class="value">+91 8686506505</span>
+                  </li>
+                  <li>
+                    <span class="title">Email : </span>
+                    <span class="value">nareshnamani1996@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-12">
+                <a class="btn btn-primary btn-lg" href="#" role="button">
+                  Downlaod CV &raquo;
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12">
-            <a class="btn btn-primary btn-lg" href="#" role="button">
-              Downlaod CV &raquo;
-            </a>
+          <div class="col-lg-6 pt-5">
+            <div class="col-12">
+              <ul class="education">
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="open-sans-font educationyear">2018</span>
+                  <div class="content">
+                    <h5>BACHELOR DEGREE</h5>
+                    <p>- VaagDevi Engineering College</p>
+
+                    <p>....</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="open-sans-font educationyear">2015</span>
+                  <div class="content">
+                    <h5>DIPLOMA DEGREE</h5>
+                    <p>- Government Polytechnic College</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="open-sans-font educationyear">2012</span>
+                  <div class="content">
+                    <h5>SCHOOLING</h5>
+                    <p>- National High School</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-lg-center text-center">
+            <h5>SKILLS</h5>
+          </div>
+
+          <div class="col-lg-4 col-6 mt-3">
+            <div class="c100 p65">
+              <span>65%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+            <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">
+              javascript
+            </h6>
+          </div>
+          <div class="col-lg-4 col-6 mt-3">
+            <div class="c100 p50">
+              <span>50%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+            <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">
+              react js
+            </h6>
+          </div>
+          <div class="col-lg-4 col-6 mt-3">
+            <div class="c100 p25">
+              <span>25%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+            <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">
+              react native
+            </h6>
           </div>
         </div>
       </div>

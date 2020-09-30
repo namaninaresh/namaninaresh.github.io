@@ -11,6 +11,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
+  scroll-behavior: smooth;
   height: 100%;
   color: #dedede;
   width: 100%;
@@ -27,6 +28,12 @@ body {
 
 .open-sans-font {
   font-family: "Open Sans", sans-serif;
+}
+
+hr {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
 }
 
 .navbar {
@@ -46,6 +53,10 @@ body {
   color: #07aaff;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.btn-about:before {
+  content: "\f007";
 }
 
 .home-details {
@@ -111,27 +122,102 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
+  overflow: hidden;
+  outline: none !important;
+  display: inline-block;
+}
+
+.btn:hover {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+.btn:hover a {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 /*** About **/
+
+.about {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.about .container {
+  transition: all 0.3s;
+}
+.about-details {
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px;
+  transition: all 0.3s;
+}
 
 li > .title {
   opacity: 0.8;
   text-transform: capitalize;
 }
 
-li {
+.Personal li {
   padding: 10px;
 }
 
-.about {
-  height: 90vh;
-  width: 100%;
-
-  padding-top: 20px;
+.education li {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 50px;
 }
-.about-details {
-  align-items: center;
+
+.education li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  border-left: 1px solid #333;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #07aaff;
+}
+.educationyear {
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #252525;
+  opacity: 0.8;
+}
+.about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content {
+  margin-top: 12px;
+}
+
+/** Skills **/
+
+.c100 {
+  float: none !important;
   margin: 0 auto;
-  padding: 16px;
+  background-color: #252525;
+}
+
+.c100:after {
+  background-color: #111;
 }
