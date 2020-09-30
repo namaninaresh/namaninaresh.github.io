@@ -1,0 +1,137 @@
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+
+  line-height: 1.6;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: #dedede;
+  width: 100%;
+  background-color: #111;
+}
+
+.primary {
+  color: #07aaff;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #111;
+}
+
+.nav-item > a {
+  color: #dedede;
+  text-transform: uppercase;
+  z-index: 111;
+}
+
+.jumbotron {
+  background-color: #111;
+}
+.active > a {
+  color: #07aaff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-details {
+  height: 82vh;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mobileprofileImage {
+  background-image: url(../images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 111;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+
+  border-radius: 115px;
+
+  border: 4px solid #252525;
+
+  margin: 10px auto;
+}
+.profileImage {
+  background-image: url(../images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: calc(100vh - 200px);
+  z-index: 111;
+  border-radius: 15px;
+
+  right: 30px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+}
+
+.display-4 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 18px 0 10px;
+  text-transform: uppercase;
+}
+
+.info {
+  line-height: 32px;
+  font-size: 14px;
+  margin: 10px 0 23px;
+}
+.Hello {
+  font-size: 22px;
+  font-weight: 400;
+}
+.btn {
+  transition: all 0.3s;
+  border-radius: 26px;
+  padding: 0 40px;
+
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/*** About **/
+
+li > .title {
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+li {
+  padding: 10px;
+}
+
+.about {
+  height: 90vh;
+  width: 100%;
+
+  padding-top: 20px;
+}
+.about-details {
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px;
+}
