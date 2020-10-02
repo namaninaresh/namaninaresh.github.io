@@ -18,6 +18,10 @@ body {
   background-color: #111;
 }
 
+.bg {
+  background-color: #1f1f1f !important;
+}
+
 .primary {
   color: #07aaff;
 }
@@ -112,6 +116,7 @@ hr {
   font-size: 22px;
   font-weight: 400;
 }
+/**
 .btn {
   transition: all 0.3s;
   border-radius: 26px;
@@ -134,7 +139,7 @@ hr {
 .btn:hover a {
   -webkit-transform: translateX(-10px);
   transform: translateX(-10px);
-}
+} **/
 
 /*** About **/
 
@@ -220,4 +225,64 @@ li > .title {
 
 .c100:after {
   background-color: #111;
+}
+
+.skillbox {
+  border: 5px solid #07aaff;
+}
+
+.c100 {
+  position: relative;
+  font-size: 120px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 5px solid #07aaff;
+}
+.c100 > span {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 5em;
+  line-height: 5em;
+  font-size: 0.2em;
+  color: #cccccc;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/*** projects ***/
+
+.projectlist {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10px;
+}
+.projectlist img {
+  transition: all 0.5s ease-in-out;
+}
+
+.projectlist:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in;
+}
+
+.projectlist .card-body .btn {
+  padding: auto 20px auto 20px;
+  border-radius: 30px;
 }
