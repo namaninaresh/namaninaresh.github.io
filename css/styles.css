@@ -229,54 +229,55 @@ li > .title {
 
 /** Skills **/
 
-.c100 {
-  float: none !important;
-  margin: 0 auto;
-  background-color: #252525;
+.skills .skill-box i
+{
+  
+
+  font-size: 130px;
+}
+.skill-box .certified
+{
+  visibility: hidden;
+  transition: all 0.3s;
 }
 
-.c100:after {
-  background-color: #111;
-}
-
-.skillbox {
-  border: 5px solid #07aaff;
-}
-
-.c100 {
-  position: relative;
-  font-size: 120px;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  border: 5px solid #07aaff;
-}
-.c100 > span {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 5em;
-  line-height: 5em;
-  font-size: 0.2em;
-  color: #cccccc;
-  display: block;
+.skill-box .col-12
+{
+  margin: 0;
+  padding: 0;
   text-align: center;
-  white-space: nowrap;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+
 }
+
+
+.skill-box:hover .certified
+{
+
+visibility: visible; 
+text-align: center;
+transition: all 0.3s;
+}
+
+
+.skills .skill-box p{
+  font-size: 15px;
+}
+
+.skills .skill-box
+{
+  margin-left: 10px;
+}
+
+.skill-box .xdlogo:hover  .st0{
+  transition: 0.3s;
+  fill: #2e001e
+}
+.skill-box .xdlogo:hover .st1 
+{
+  transition: 0.3s;
+  fill: #ff2bc2;
+}
+
 
 /*** projects ***/
 
@@ -368,6 +369,30 @@ li > .title {
 
 
 /*** serives ***/
+
+.services .servicelist
+{
+  transition: all 0.3s;
+}
+
+.servicelist:hover img
+{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in;
+}
+.servicelist:hover 
+{
+  
+  transform: scale(1.05);
+
+  color: #07aaff;
+  transition: all 0.5s ease-in;
+}
+.servicelist:hover .card
+{
+  border: 1px solid #07aaff;
+}
+
 
 
 .services .card-header
