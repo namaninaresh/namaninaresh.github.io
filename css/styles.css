@@ -24,6 +24,11 @@ body {
   background-color: #1f1f1f !important;
 }
 
+.transtion3s
+{
+  transition: 0.3s ease-in-out;
+}
+
 .container-details {
   align-items: center;
   margin: 0 auto;
@@ -148,6 +153,8 @@ hr {
 } **/
 
 /*** About **/
+
+
 
 .about {
   width: 100%;
@@ -279,6 +286,36 @@ transition: all 0.3s;
 }
 
 
+.skills .plus-icon
+{
+  background-color: #07aaff;
+
+  width: 40px;
+  height: 40PX;
+  line-height: 46px;
+  font-size: 20px;
+  border-radius: 30px;
+  
+ 
+}
+
+.skills .plus-details
+{
+  margin: 0 auto;
+  padding: 16px;
+  transition: all 0.3s;
+}
+
+.skills .alert-border-success
+{
+  border-color:#c3e6cb
+}
+
+.skills .gold
+
+{  color:gold
+  
+}
 /*** projects ***/
 
 
@@ -370,9 +407,10 @@ transition: all 0.3s;
 
 /*** serives ***/
 
-.services .servicelist
+.services .servicelist 
 {
   transition: all 0.3s;
+ 
 }
 
 .servicelist:hover img
@@ -385,13 +423,11 @@ transition: all 0.3s;
   
   transform: scale(1.05);
 
-  color: #07aaff;
   transition: all 0.5s ease-in;
+
+ 
 }
-.servicelist:hover .card
-{
-  border: 1px solid #07aaff;
-}
+
 
 
 
