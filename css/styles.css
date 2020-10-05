@@ -59,9 +59,7 @@ hr {
   font-weight: bold;
 }
 
-.btn-about:before {
-  content: "\f007";
-}
+
 
 .home-details {
   height: 82vh;
@@ -157,6 +155,9 @@ hr {
   padding: 16px;
   transition: all 0.3s;
 }
+.btn-about:before {
+  content: "\f007";
+}
 
 li > .title {
   opacity: 0.8;
@@ -181,7 +182,7 @@ li > .title {
   bottom: 0;
   border-left: 1px solid #333;
 }
-.icon {
+.education .icon {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -282,7 +283,86 @@ li > .title {
   transition: all 0.5s ease-in;
 }
 
-.projectlist .card-body .btn {
-  padding: auto 20px auto 20px;
-  border-radius: 30px;
+
+@media (max-width: 700px)
+{
+  .card-body
+  {
+    padding: 0.8rem;
+  }
 }
+
+
+
+
+
+
+
+
+
+/***** contact ****/
+
+
+.contact-details {
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px;
+  transition: all 0.3s;
+}
+.social-icon
+{
+  background-color: #2b2a2a;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 42px;
+  text-align: center;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+
+.social li{
+  display: inline-block;
+}
+
+
+.social-icon li:hover .social-icon
+{
+  background-color: #07aaff;
+}
+
+.social i {
+ color: #fff;
+}
+
+
+.contact-form .form-control
+{
+  background-color: #252525;
+  border: 0px;
+
+  color:#fff;
+}
+
+.contact-form .form-control:focus
+{
+  border: 1px solid #07aaff;
+  background-color: #252525;
+  color:#fff;
+}
+
+
+/*** serives ***/
+
+
+
+.services .card-header
+{
+  background-color: #cccccc;
+  min-height: 150px;
+
+  align-items: center;
+}
+
