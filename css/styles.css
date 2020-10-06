@@ -5,6 +5,26 @@ html {
   scroll-behavior: smooth;
 }
 
+#myBtn {
+  transition: 0.3s;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 23px;
+  border: none;
+  outline: none;
+  
+  color: white;
+  cursor: pointer;
+ 
+}
+
+#myBtn:hover {
+  transition: 0.3s;
+  background-color: #555;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -171,9 +191,13 @@ hr {
   padding: 16px;
   transition: all 0.3s;
 }
-.btn-about:before {
-  content: "\f007";
+.btn-about
+{
+  border-radius: 10px;
+  box-shadow:  0px 10px 10px rgba(0, 0, 0, 0.1);
+
 }
+
 
 li > .title {
   opacity: 0.8;
@@ -360,32 +384,102 @@ transition: all 0.3s;
   padding: 16px;
   transition: all 0.3s;
 }
-.social-icon
-{
-  background-color: #2b2a2a;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  line-height: 42px;
-  text-align: center;
-  transition: 0.3s;
-  font-size: 17px;
-  margin: 0 6px;
-  border-radius: 50%;
-}
-
 .social li{
   display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  background: #252525;
+  border-radius: 50px;
+  box-shadow:  0px 10px 10px rgba(0, 0, 0, 0.1);
+
+
 }
-
-
-.social-icon li:hover .social-icon
+.social li:hover
 {
-  background-color: #07aaff;
+  width: 180px;
+
+}
+.social li:nth-child(1):hover .social-icon
+{
+  background: #4267b2;
+}
+.social li:nth-child(2):hover .social-icon
+{
+  background: #1da1fe;
+}
+.social li:nth-child(3):hover .social-icon
+{
+ 
+  background: #25d366;
+}
+.social li:nth-child(4):hover .social-icon
+{
+  background: #0E76A8;
+  
+}
+.social li:nth-child(5):hover .social-icon
+{
+  background: #EA4C89;
 }
 
-.social i {
- color: #fff;
+.social li .social-icon
+{
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+.social li a
+{
+  color: #dedede;
+  cursor:pointer;
+}
+
+.social li .social-icon i 
+{
+  font-size: 20px;
+  line-height: 50px;
+
+}
+
+.social li span
+{
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
+.social li:nth-child(1):hover span
+{
+  color: #4267b2;
+}
+.social li:nth-child(2):hover span
+{
+
+  color: #1da1fe;
+}
+.social li:nth-child(3):hover span
+{
+ 
+  color: #25d366;
+}
+.social li:nth-child(4):hover span
+{
+  color: #0E76A8;
+  
+}
+.social li:nth-child(5):hover span
+{
+  color: #EA4C89;
 }
 
 
