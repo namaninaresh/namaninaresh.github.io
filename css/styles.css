@@ -451,6 +451,21 @@ li > .title {
   align-items: center;
 }
 
+.card-title {
+  color: #31a298;
+}
+.services .card-text {
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Poppins, arial, sans-serif;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 30px;
+}
+
 /** UI **/
 
 .tiles {
@@ -675,7 +690,7 @@ li > .title {
   }
   .close {
     position: absolute;
-    bottom: 10%;
+    bottom: 25%;
     right: 50%;
     color: #f1f1f1;
     font-size: 40px;
